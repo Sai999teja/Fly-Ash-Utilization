@@ -14,7 +14,7 @@ model2 = pickle.load(open('fly_model2.pkl', 'rb'))
 
 @app.route('/')
 def hello_world():
-    return render_template("index.html")
+    return render_template("fly_ash.html")
 
 
 @app.route('/predict', methods=['POST', 'GET'])
@@ -28,7 +28,7 @@ def predict():
     prediction1 = str(prediction1)
     prediction2 = str(prediction2)
 
-    return render_template('index.html', pred='Fly Ash Generation and Utilization are as follows', result1=prediction1,
+    return render_template('fly_ash.html', pred='Fly Ash Generation and Utilization are as follows', result1=prediction1,
                            result2=prediction2)
 
 
