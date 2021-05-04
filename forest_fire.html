@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Fly Ash Generation and Utilization Prediction</title>
+  <link rel="shortcut icon" type="image/png" href="/money.png"/>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h2 class="header center orange-text">(Under Prof. B.R. Parate)</h2>
+      <div class="row center">
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="POST" class="col s12">
+      <div class="row">
+
+
+
+
+
+
+
+
+
+        <div class="input-field col s4">
+            <label for="__name_"><b>Enter Year for Prediction</b></label>
+            <br>
+          <input id="__name_" name="Humidity" type="text" class="validate">
+
+        </div>
+
+    <br>
+    <br>
+
+
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Fly Ash Generation and Utilization </button>
+      </div>
+    </form>
+      </div>
+
+      <br><h4 align="center"<b>{{pred}}</b></h4>
+        <br>
+      <br><h4 align="center"<b>{{result1}}</b></h4>
+        <br>
+      <br><h4 align="center"<b>{{result2}}</b></h4>
+        <br>
+
+    </div>
+  </div>
+
+
+  </body>
+</html>
+
