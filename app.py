@@ -25,6 +25,8 @@ def predict():
     print(final)
     prediction1 = model.predict(final)
     prediction2 = model2.predict(final)
+    prediction1 = prediction1[0][0]
+    prediction2 = prediction2[0][0]
     prediction1 = str(prediction1)
     prediction2 = str(prediction2)
 
