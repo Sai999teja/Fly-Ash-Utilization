@@ -29,11 +29,9 @@ def predict():
     prediction2 = prediction2[0][0]
     prediction1 = str(prediction1)
     prediction2 = str(prediction2)
-    x  = str(x)
-    i = 'is'
-    y = 'Million Tonnes'
+    
 
-    return render_template('index.html', pred='Fly Ash Generation and Utilization in the year of',year = x ,ins = i,result1=prediction1,mi = y,result2=prediction2)
+    return render_template('index.html', pred='Fly Ash Generation and Utilization are ',result1=prediction1,result2=prediction2)
 
 
 if __name__ == '__main__':
